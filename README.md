@@ -1,6 +1,6 @@
 # FractalMarcher
 
-FractalMarcher: a C++ version CodeParade's PySpace.
+FractalMarcher: a C++ version of CodeParade's PySpace.
 Check it out too! https://github.com/HackerPoet/PySpace
 
 ## Compiling
