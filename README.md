@@ -1,7 +1,6 @@
 # FractalMarcher
 
-FractalMarcher: a C++ version of CodeParade's PySpace.
-Check it out too! https://github.com/HackerPoet/PySpace
+FractalMarcher: a C++ fractal rendering engine inspired by CodeParade's PySpace.
 
 ## Compiling
 

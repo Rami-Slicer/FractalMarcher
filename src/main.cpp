@@ -1,4 +1,4 @@
-/* FractalMarcher: a realtime 3D fractal rendering engine based on CodeParades PySpace.
+/* FractalMarcher: a realtime 3D fractal rendering engine inspired by CodeParades PySpace.
  * Check it out too! https://github.com/HackerPoet/PySpace
  */
 
