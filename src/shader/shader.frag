@@ -111,7 +111,19 @@ void rotZ(inout vec3 z, float a) {
 	rotZ(z, sin(a), cos(a));
 }
 
-// scene distance estimator; combine multiple DEs here
+// another scene DE, kinda weird
+// float sceneDE(vec3 p) {
+// 	for(int i = 0; i<MAX_DE_ITER; i++) {
+// 		boxFold(p,vec3(1.0));
+// 		sphereFold(p,1.5,1.0);
+// 		p *= vec3(1.1);
+// 		rotX(p,a);
+// 		rotZ(p,b);
+// 	}
+// 	return boxDE(p,vec3(1.0));
+// }
+
+// scene distance estimator; folds go here
 float sceneDE(vec3 p) {
 	for(int i = 0; i<MAX_DE_ITER; i++) {
 		boxFold(p,vec3(1.0));

@@ -8,7 +8,7 @@
 #include <iostream>
 #include <string>
 
-float shader_param[] = {0.1, 1.0, 2.0, 6.0, 6.0, 1.0};
+float shader_param[] = {1.1, 1.0, 2.0, 6.0, 6.0, 1.0};
 float camera_param[2] = {0,0};
 float camera_position[3] = {0,0,0};
 
