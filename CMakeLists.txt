@@ -5,7 +5,8 @@ include(CTest)
 enable_testing()
 
 add_executable(fractalmarcher 
-               src/main.cpp)
+               src/main.cpp
+               src/util.cpp)
 
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})

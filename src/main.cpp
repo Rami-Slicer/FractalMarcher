@@ -1,10 +1,13 @@
-/* FractalMarcher: a realtime 3D fractal rendering engine inspired by CodeParades PySpace.
+/* FractalMarcher: a realtime 3D fractal rendering engine inspired by CodeParade's PySpace.
  * Check it out too! https://github.com/HackerPoet/PySpace
  */
 
 #include "res.hpp"
+#include "util.hpp"
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include <string>
+
 
 int main()
 {
@@ -39,11 +42,22 @@ int main()
             // give an error if it doesn't exist and exit 
             std::cout << "Couldn't load shader file; please make sure it exists" << std::endl;
             return 0;
-            // error...
         }
+
+        // load Roboto Mono so we can draw info text.
+        sf::Font font;
+        if (!font.loadFromFile(roboto_mono))
+        {
+            // give an error if it doesn't exist and exit 
+            std::cout << "Couldn't load font; please make sure it exists" << std::endl;
+        }
+
+        sf::Text info_text = generate_text("INFO:",sf::Vector2f(0,0),font);
+
         // draw everything here...
         window.draw(render_rect, &shader);
-        
+        window.draw(info_text);
+
         // end the current frame
         window.display();
     }
